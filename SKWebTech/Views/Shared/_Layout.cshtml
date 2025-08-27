@@ -29,7 +29,18 @@
     <main role="main">
         @RenderBody()
     </main>
-
+    <div class="robot-container">
+        <svg id="robot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <rect x="20" y="10" width="24" height="24" rx="4" fill="#6c63ff" />
+            <circle cx="28" cy="20" r="3" fill="#fff" />
+            <circle cx="36" cy="20" r="3" fill="#fff" />
+            <rect x="26" y="28" width="12" height="6" fill="#fff" />
+            <line x1="20" y1="34" x2="16" y2="44" stroke="#6c63ff" stroke-width="3" />
+            <line x1="44" y1="34" x2="48" y2="44" stroke="#6c63ff" stroke-width="3" />
+            <line x1="24" y1="10" x2="24" y2="6" stroke="#6c63ff" stroke-width="3" />
+            <line x1="40" y1="10" x2="40" y2="6" stroke="#6c63ff" stroke-width="3" />
+        </svg>
+    </div>
     <footer class="footer">
         <div class="container">
             <p>&copy; @DateTime.Now.Year SK Web Tech | Professional Web & Enterprise Solutions</p>
