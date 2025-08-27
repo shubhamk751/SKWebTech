@@ -192,8 +192,10 @@ body {
         position: absolute;
         top: 60px;
         left: 0;
-        padding: 1rem 2rem;
+        padding: 1rem 0.5rem;
         border-top: 1px solid rgba(0,0,0,0.1);
+        text-align: right;
+        z-index: 1000; /* make sure it’s above hero */
     }
 
         .nav-links.active {
@@ -207,37 +209,24 @@ body {
         gap: 1rem;
     }
 
-        /* Ensure 3rd item (theme-btn) stays right */
-        .navbar .container > :nth-child(3) {
-            margin-left: auto;
-        }
-
-
     .logo {
-        order: 1; /* Keep logo left */
+        order: 1; /* Logo stays left */
     }
 
     .theme-btn {
-        order: 2; /* Theme button stays right */
-        margin-left: 0.5rem;
+        order: 2; /* Theme toggle before hamburger */
+        margin-left: auto; /* Pushes theme toggle to right */
     }
 
     .hamburger {
         display: block;
-        order: 3; /* Hamburger to the right of logo, before theme button */
-        margin-left: auto; /* Push hamburger as far right as possible */
+        order: 3;
+        margin-left: 0.5rem; /* keeps it next to theme button */
     }
 
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero {
-        padding: 6rem 1rem;
+    .section {
+        padding: 1rem 2rem;
+        text-align: center;
     }
 }
 
